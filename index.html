@@ -11,6 +11,7 @@
         font-size: 1.2rem;
         font-weight: bold;
         margin: 50px;
+        background-color: rgb(238, 237, 237);
       }
       h1 {
         font-weight: bolder;
@@ -56,14 +57,48 @@
         background: #265301;
         color: #cdfeaa;
       }
+
+      ul {
+        list-style-type: circle;
+      }
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+      .yellow {
+        background-color: rgb(240, 238, 157);
+      }
+      .green {
+        background-color: rgb(150, 233, 150);
+      }
+      .purple {
+        background-color: rgb(141, 162, 231);
+      }
+      form {
+        border: 1px solid;
+        width: 50%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      footer {
+        padding-top: 50px;
+      }
     </style>
   </head>
   <body>
-    <h1 style="text-align: center">The Creator of Linux</h1>
-    <center>
-      <img src="Linus_Bhaya.jpeg" alt="Linus Torvalds" /><br />
-      <small>A photograph of Linus Torvalds</small>
-    </center>
+    <header>
+      <h1 style="text-align: center">The Creator of <u>Linux</u> </h1>
+      <center>
+        <img src="Linus_Bhaya.jpeg" alt="Linus Torvalds" /><br />
+        <small>Linus Torvalds</small>
+      </center></header
+    >
 
     <h2>Biography</h2>
     <p>
@@ -123,14 +158,91 @@
       >-- Time Magazine The Famous People Resources Learn more about Linus
       Torvalds and his work:</h3
     >
-    <a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank"
-      >Wikipedia page on Linus Torvalds</a
-    ><br />
-    <a href="https://linuxtorvalds.com/" target="_blank"
-      >Linus Torvalds's personal website</a
-    ><br />
-    <a href="https://www.kernel.org/" target="_blank"
-      >The Linux Kernel Archives</a
+    <ul>
+      <li
+        ><a href="https://en.wikipedia.org/wiki/Linus_Torvalds" target="_blank"
+          >Wikipedia page on Linus Torvalds</a
+        ></li
+      >
+      <li
+        ><a href="https://linuxtorvalds.com/" target="_blank"
+          >Linus Torvalds's personal website</a
+        ></li
+      >
+      <li
+        ><a href="https://www.kernel.org/" target="_blank"
+          >The Linux Kernel Archives</a
+        ></li
+      >
+    </ul>
+    <!-- HomeWork  -->
+    <h2>Home<u>Work</u></h2>
+    <table border="2">
+      <thead>
+        <tr>
+          <th rowspan="3">Day</th>
+          <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+          <th colspan="2">Schedule</th>
+          <th rowspan="2">Topic</th>
+        </tr>
+        <tr>
+          <th>Begin</th>
+          <th> End</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Monday</td>
+          <td rowspan="2" class="yellow">8:00 a.m.</td>
+          <td rowspan="2" class="purple">5:00 p.m.</td>
+          <td>Introduction To XML</td>
+        </tr>
+        <tr>
+          <td>Validity:DTD and Relax NG</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Tuesday</td>
+          <td class="yellow">8:00 a.m.</td>
+          <td class="yellow">11:00 p.m.</td>
+          <td>Xpath</td>
+        </tr>
+        <tr>
+          <td class="yellow">11:00 a.m.</td>
+          <td class="green">2:00 p.m.</td>
+          <td rowspan="2">XSL Transformations</td>
+        </tr>
+        <tr>
+          <td class="green">2:00 p.m.</td>
+          <td class="purple">5:00 p.m.</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>8:00 a.m.</td>
+          <td>12:00 p.m.</td>
+          <td>XML Formatting Objects</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <form>
+      <div>
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" required placeholder="Name" />
+      </div>
+
+      <div>
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" required placeholder="Email" />
+      </div>
+
+      <div>
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+    <footer
+      ><center><small>@Sachin kumawat</small></center></footer
     >
   </body>
 </html>
